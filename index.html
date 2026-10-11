@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+</head>
+<body bgcolor="#F2F2F2" text="#FFFFFF">
+
+  <br>
+
+  <table align="center" width="940" cellpadding="0" cellspacing="0">
+
+    <!-- ===== Barra superior de la ventana ===== -->
+    <tr>
+      <td bgcolor="#F5F5F5" height="40" colspan="2">
+        &nbsp;&nbsp;
+        <font color="#E8541E" size="4">&#9679;</font>
+        <font color="#F5B800" size="4">&#9679;</font>
+        <font color="#2ECC71" size="4">&#9679;</font>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- ===== Zona del formulario ===== -->
+      <td bgcolor="#2AA9C9" width="740" valign="top">
+
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="120">&nbsp;</td>
+            <td>
+
+              <font face="Arial" color="#FFFFFF">
+
+                <header>
+                  <br><br>
+                  <h1>Formulario de contacto</h1>
+                  <p><font size="2">Por favor completa tu información y te responderemos en muy poco tiempo.</font></p>
+                </header>
+
+                <br>
+
+                <main>
+                  <form action="#" method="post">
+
+                    <table cellpadding="6" cellspacing="0">
+
+                      <!-- Nombre -->
+                      <tr>
+                        <td width="130"><font size="2">Tu nombre *</font></td>
+                        <td>
+                          <input type="text" id="nombre" name="nombre" placeholder="Nombre" size="16" required>
+                          &nbsp;&nbsp;
+                          <input type="text" id="apellido" name="apellido" placeholder="Apellido" size="16" required>
+                        </td>
+                      </tr>
+
+                      <!-- Correo -->
+                      <tr>
+                        <td><font size="2"><label for="correo">Tu correo *</label></font></td>
+                        <td>
+                          <input type="email" id="correo" name="correo" placeholder="ej. hola@contacto.net" size="44" required>
+                        </td>
+                      </tr>
+
+                      <!-- Teléfono -->
+                      <tr>
+                        <td><font size="2">Teléfono *</font></td>
+                        <td>
+                          <input type="tel" id="tel1" name="tel1" placeholder="###" size="8" maxlength="3" pattern="[0-9]{3}" required>
+                          &nbsp;
+                          <input type="tel" id="tel2" name="tel2" placeholder="###" size="8" maxlength="3" pattern="[0-9]{3}" required>
+                          &nbsp;
+                          <input type="tel" id="tel3" name="tel3" placeholder="####" size="8" maxlength="4" pattern="[0-9]{4}" required>
+                        </td>
+                      </tr>
+
+                      <!-- Asunto del mensaje -->
+                      <tr>
+                        <td><font size="2"><label for="asunto">Asunto del mensaje *</label></font></td>
+                        <td>
+                          <select id="asunto" name="asunto" required>
+                            <option value="consulta">Consulta</option>
+                            <option value="comentario">Comentario</option>
+                            <option value="soporte">Soporte técnico</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro" selected>Otro</option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <!-- Mensaje -->
+                      <tr>
+                        <td valign="top"><font size="2"><label for="mensaje">Mensaje *</label></font></td>
+                        <td>
+                          <textarea id="mensaje" name="mensaje" rows="5" cols="44" required></textarea>
+                        </td>
+                      </tr>
+
+                      <!-- Verificación -->
+                      <tr>
+                        <td valign="top"><font size="2">Verificación *</font></td>
+                        <td>
+                          <table bgcolor="#F9F9F9" border="1" bordercolor="#D3D3D3" cellpadding="14" cellspacing="0">
+                            <tr>
+                              <td>
+                                <font color="#333333" size="2">
+                                  <label><input type="checkbox" id="robot" name="robot" value="humano" required> No soy un robot</label>
+                                </font>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <br>
+                    <hr width="480" align="left" color="#BFE6F0">
+                    <br>
+
+                    <button type="submit">ENVIAR FORMULARIO</button>
+
+                    <br><br><br>
+                  </form>
+                </main>
+
+              </font>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+
+      <!-- ===== Decoración lateral (bloques de color) ===== -->
+      <td bgcolor="#5BB9C4" width="200" valign="top">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr><td height="30" bgcolor="#5BB9C4"></td></tr>
+          <tr><td height="40" bgcolor="#58DCE0"></td></tr>
+          <tr><td height="40" bgcolor="#D8E36B"></td></tr>
+          <tr><td height="40" bgcolor="#EA5B78"></td></tr>
+          <tr><td height="30" bgcolor="#5BB9C4"></td></tr>
+          <tr><td height="30" bgcolor="#58C6E3"></td></tr>
+          <tr><td height="40" bgcolor="#E85A63"></td></tr>
+          <tr><td height="30" bgcolor="#5BB9C4"></td></tr>
+          <tr><td height="40" bgcolor="#7FD1E8"></td></tr>
+          <tr><td height="40" bgcolor="#B6D88B"></td></tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
